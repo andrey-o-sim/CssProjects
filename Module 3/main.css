@@ -1,0 +1,18 @@
+.nice-box {
+    border: solid 1px black;
+    margin: 5px 10px 15px 20px;
+    padding: 5px 10px 15px 20px;
+    display: inline-block;
+}
+
+#firstBox {
+    width: 50%;
+    height: 300px;
+    display: none;
+}
+
+#secondBox:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
