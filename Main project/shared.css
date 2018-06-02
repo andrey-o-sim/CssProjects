@@ -33,7 +33,7 @@ main {
   z-index: 1;
 }
 
-.main-header > div {
+.main-header>div {
   display: inline-block;
   vertical-align: middle;
 }
@@ -90,32 +90,26 @@ main {
   margin: 0 1rem;
 }
 
-.main-nav__item a,
-.mobile-nav__item a {
+.main-nav__item a, .mobile-nav__item a {
   text-decoration: none;
   color: #0e4f1f;
   font-weight: bold;
   padding: 0.2rem 0;
 }
 
-.main-nav__item a:hover,
-.main-nav__item a:active {
+.main-nav__item a:hover, .main-nav__item a:active {
   color: white;
   border-bottom: 5px solid white;
 }
 
-.main-nav__item--cta a,
-.mobile-nav__item--cta a {
+.main-nav__item--cta a, .mobile-nav__item--cta a {
   color: white;
   background: #ff1b68;
   padding: 0.5rem 1rem;
   border-radius: 8px;
 }
 
-.main-nav__item--cta a:hover,
-.main-nav__item--cta a:active,
-.mobile-nav__item--cta a:hover,
-.mobile-nav__item--cta a:active {
+.main-nav__item--cta a:hover, .main-nav__item--cta a:active, .mobile-nav__item--cta a:hover, .mobile-nav__item--cta a:active {
   color: #ff1b68;
   background: white;
   border: none;
@@ -125,7 +119,6 @@ main {
   .toggle-button {
     display: none;
   }
-
   .main-nav {
     display: inline-block;
     text-align: right;
@@ -157,8 +150,7 @@ main {
   text-decoration: none;
 }
 
-.main-footer__link a:hover,
-.main-footer__link a:active {
+.main-footer__link a:hover, .main-footer__link a:active {
   color: #ccc;
 }
 
@@ -201,8 +193,7 @@ main {
   cursor: pointer;
 }
 
-.button:hover,
-.button:active {
+.button:hover, .button:active {
   background: white;
   color: #0e4f1f;
 }
@@ -211,8 +202,15 @@ main {
   outline: none;
 }
 
+.button[disabled] {
+  cursor: not-allowed;
+  border: #a1a1a1;
+  background: #ccc;
+  color: #a1a1a1;
+}
+
 .open {
-    display: block !important;
+  display: block !important;
 }
 
 @media (min-width: 40rem) {
