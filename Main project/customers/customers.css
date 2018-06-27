@@ -7,10 +7,12 @@ main {
 }
 
 .testimonial__image-container {
-  width: 100%;
+  width: 60%;
   max-width: 40rem;
   max-width: 580px;
   box-shadow: 3px 3px 5px 3px rgba(0, 0, 0, 0.3);
+  transform: skew(20deg);
+  overflow: hidden;
 }
 
 .testimonial__image {
@@ -18,6 +20,7 @@ main {
   /*данное свойство нужно для того, чтобы убрать белую линию между image и box-shadow
   это tricky момент в css*/
   vertical-align: top;
+  transform: skew(-20deg) scale(1.3);
 }
 
 .testimonial__info {
