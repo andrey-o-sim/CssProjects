@@ -51,7 +51,7 @@ main {
     поэтому в данном случае, когда мы задаем  translateX(3.5rem), то элемент двигается
     со смещением вниз*/
     /*rotate по умолчанию задает rotateZ*/
-    transform: rotate(45deg) translate(3.5rem,-1rem);
+    transform: rotate(45deg) translate(3.5rem, -1rem);
     transform-origin: center;
     width: 12rem;
     text-align: center;
@@ -60,6 +60,8 @@ main {
 .package:hover, .package:active {
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     border-color: #ff5454;
+    /* animation: push-up 500ms forwards; */
+    animation: push-up 1s ease-out forwards;
 }
 
 .package__title {}
@@ -126,4 +128,22 @@ main {
     #free {
         border-right: 4px solid #0e4f1f;
     }
+}
+
+@keyframes push-up {
+    0% {
+        transform: translateY(0);
+    }
+    33% {
+        transform: translateY(-1.5rem);
+    }
+    100% {
+        transform: translateY(-1rem);
+    }
+    /* from {
+        transform: scale(1, 1);
+    }
+    to {
+        transform: scale(1.2, 1.2);
+    } */
 }
